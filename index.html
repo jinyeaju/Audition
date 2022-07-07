@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue를 활용한 영화 오디션 사이트 제작</title>
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header-el></header-el>
+        <bannerTop-el></bannerTop-el>
+        <cont1-el></cont1-el>
+        <bannermid-el></bannermid-el>
+        <cont2-el></cont2-el>
+        <review-el></review-el>
+        <footer-el></footer-el>
+    </div>
+    
+    <!-- header - start -->
+<!--
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <a href="#"><img src="./img/logo_fm.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Movie</a></li>
+                    <li><a href="">Artist</a></li>
+                    <li><a href="">Audition</a></li>
+                    <li><a href="">Comunity</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+-->
+    <!-- header - end -->
+    
+
+    <!-- bannerTop - start -->
+<!--
+    <div id="slider">
+
+        <div class="slide_frame">
+
+            <div class="slide">
+                <div class="dark"></div>
+            </div>
+
+        </div>
+
+        <div class="wrap">
+            <div class="text_part">
+                <h2>지금부터 당신의 영화가 시작 됩니다.</h2>
+                <a href="#">오디션 참가</a>
+            </div>
+        </div>
+        
+    </div>
+-->
+    <!-- bannerTop - end -->
+
+
+    <!-- cont1 - start -->
+<!--
+    <div id="movie">
+        <div class="wrap">
+            <h2>Today's Movie</h2>
+            <div class="content">
+                <div class="box">
+                    <div class="movie_item">
+                        <img src="./img/play_icon.png" alt="영상 재생 아이콘">
+                    </div>
+                    <h3>죄 많은 소녀(After My Deth, 2019)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- cont1 - end -->
+
+
+    <!-- bannerMid - start -->
+<!--
+    <div id="midBanner">
+        <div class="wrap">
+            <h3>Audition Schedule</h3>
+            <p>
+                실시간으로 업데이트 되는 오디션 정보를 확인하실 수 있습니다.<br>
+                배우 또는 배우 지망생분들의 많은 참여 바랍니다.
+            </p>
+            <a href="#">오디션 정보 확인</a>
+        </div>
+    </div>
+-->
+    <!-- bannerMid - end -->
+
+    <!-- cont2-el - start -->
+<!--
+    <div id="actor">
+        <div class="wrap">
+            <div class="title">
+                <h2>Actor</h2>
+            </div>
+            <div class="cont">
+
+                <div class="box">
+                    <div class="actor_bg"></div>
+                    <div class="txt_part">
+                        <p>전여빈</p>
+                        <a href="#">필모그래피</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="more_btn">
+                <a href="#">더보기</a>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- cont2-el - end -->
+
+    <!-- review-el - start -->
+<!--
+    <div id="review">
+        <div class="dark">
+            <div class="wrap">
+
+                <div class="title">
+                    <h2>Audition Reviewes</h2>
+                </div>
+    
+                <div class="slider_cover">
+                    <div class="slider">
+        
+                        <div class="slide">
+                            <p>리뷰내용</p>
+                            <div class="img"></div>
+                            <span>김주영</span>
+                        </div>
+    
+                        <div class="slide">
+                            <p>리뷰내용</p>
+                            <div class="img"></div>
+                            <span>김주영</span>
+                        </div>
+    
+                        <div class="slide">
+                            <p>리뷰내용</p>
+                            <div class="img"></div>
+                            <span>김주영</span>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="pager">
+                    <ol>
+                        <li class="active" rel="0"></li>
+                        <li rel="1"></li>
+                        <li rel="2"></li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+-->
+    <!-- review-el - end -->
+
+    <!-- footer-el - start -->
+<!--
+    <footer>
+        <div class="wrap">
+            <ul class="footer_link">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">고객상담실</a></li>
+            </ul>
+            <div class="footer_info">
+                <div class="box">
+                    <ul>
+                        <li><span>Filmmakers</span></li>
+                        <li><span>대표 : 임지애</span></li>
+                        <li><span>사업자등록번호 : 113-28-507</span></li>
+                    </ul>
+                    <ul>
+                        <li><span><p>주소 : 서울특별시 강남구 논현로</p></span></li>
+                        <li><span><p>개인정보관리책임자 : 한상용</p></span></li>
+                    </ul>
+                    <p>&copy; 1999 - 2022 Filmmakers</p>
+                </div>
+
+                <div class="box">
+                    <p>고객센터(이용 및 결제 문의) 제휴 및 대외 협력, 광고 문의</p>
+                    <ul>
+                        <li><span>대표전화 : 02-1234-5678</span></li>
+                        <li><span>카카오톡 플러스친구 : 필름메이커스</span></li>
+                    </ul>
+                    <p>이메일 : info@filmmakers.com</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+-->
+    <!-- footer-el - end -->
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
